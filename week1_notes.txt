@@ -1,0 +1,84 @@
+REVATURE-CTS-PES-MANDYA-TRAINING
+
+DAY1: MONDAY 22-12-2025
+
+Organising and Arranging Files and Folders in our Laptop:
+	Under C drive, create a folder named software
+	Create a folder for each of the s/w or App U download
+	Now cut and paste the .msi/setup/installer file from downloads folder to the folder in c:/software
+	Now double click and Install the s/w or App
+
+APP INSTALLATIONS:
+notepad:
+	https://notepad-plus-plus.org/downloads/v8.8.5/
+vs code:
+	https://code.visualstudio.com/download
+java21:
+	https://download.oracle.com/java/21/archive/jdk-21.0.8_windows-x64_bin.msi (sha256)
+git:
+	https://git-scm.com/install/windows
+	click on the OS running on your system
+python:
+	https://www.python.org/downloads/
+	click on the OS running on your system
+node:	
+
+Add Path to Environment variables and you can make the CLI available to use every where.
+For example, if git is not recognised while using, add the below path to the environment variables.
+C:\Program Files\Git\bin
+
+CLIs we get when we install Apps:
+Java:	javac and java
+Python: python pip
+node: 	node npm
+vsCode: code
+
+To open an App (vs code for example) from a specific path:
+Navigate to the path
+Open the cmd
+code .
+. (dot) here is short cut to the current path
+
+
+Create Github Account
+	Use your permanent email Id
+	Add mobile number (permanent)
+	
+Create new private Repo (Under Organisation)
+	On Top slightly right of logged in page Click + button
+	Click new Repository
+	FNname-SName (Repo Name)
+	Add relavent Notes
+	Keep the Repo Private
+	Select Add Readme File
+	Now Click Create Repo (Green color)
+
+Uploading a file to the Repo:
+Push/Uploading a file to the remote/Repo:
+	Go to the Repo list (Click on cat icon)
+	Go to the Repo
+	Click Add file -> upload file
+	Add the commit message
+
+Cloning a Repo: (Copying the remote repo to our system/laptop)
+	git clone https://github.com/revature-pes/trainer
+
+Git Configuration:
+	git config --global user.name "revature2025"
+	git config --global user.email "nithin.n.c@revature.com"
+	
+Steps to Create PAT:
+	Click on Profile icon (Top right corner)
+	Scroll down and Click Settings
+	In next page, scroll down and click developer settings (botton left)
+	Next page, Click Personal Access Tokens -> Tokens classic
+	Next page, Click generate tokens -> classic
+	Autherization (May ask)
+	Add the Note
+	Click Expiry -> Select No expiry
+	Scope: Select the very 1st check box Repo (only)
+	Scroll down and click generate PAT (green button)
+	Copy the PAT (to clipboard)
+	Mail the PAT to yourself (saved it carefully)
+
+
