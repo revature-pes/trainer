@@ -80,5 +80,43 @@ Steps to Create PAT:
 	Scroll down and click generate PAT (green button)
 	Copy the PAT (to clipboard)
 	Mail the PAT to yourself (saved it carefully)
+-----------------------------------------------------------
+DAY2 TUESDAY 23-12-2025
+
+SDLC Models
+UML Diagrams
+SDLC Steps
+	Business analysis
+		What business
+		Domain
+		Rule of land allow the Business
+		Actors and actions
+	Data analysis
+		Entities and functionality
+		Attributes of the entities
+	Planning
+	Estimation
+	Proof of Concept (POC)
+	MoU
+	Design (Architects, Project Manager)
+	Detailed Design (Tech Leads, Senior Developers)
+	Implimentation (Developers, Programmers)
+	Testing
+		Unit testing (White Box testing)
+		Black Box:
+			Component test
+			Assembly Test
+			Bigger Assembly test
+			Product test
+			Build and Release Management
+			Installation
+			UAT
+			Sign Off
+			Maintainance phase
+		STLC
+			What different testing are required (Test Manager)
+			Which part of the code need to be tested
+			Templates (Test Lead)
+-------------------------------------------------
 
 

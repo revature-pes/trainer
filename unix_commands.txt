@@ -1,0 +1,42 @@
+Unix Commands:
+ls
+list. It is similar to dir of windows
+Options available with ls
+l
+t
+r
+ls -l
+ls -t
+ls -l -t
+ls -ltr
+ls -lr
+
+mkdir (to create a new directory/folder)
+cd directory (change directory)
+	absolute path
+	relative path (just name of the file or folder)
+In Unix, the root most (paremt most) directory is / (root)
+
+pwd: To list the current/present working directory
+
+man ls
+rm / -R
+-r
+
+cat > file2
+CONTENT OF THE FILE
+
+The above command creates a new file "file2" and the content entered from STDIN is stored into the buffer and once Ctrl+Z is entered, the content is saved into the "file2"
+
+ls
+lists only the names of the files and folders (newest 1st)
+
+ls -r
+In reverse of ls command
+
+ls -t
+Lists the files and folders along with the timestamp
+
+ls -ltr
+
+ls, rm, mkdir, rmdir, head, tail, cat, man, who, grep, awk, cp, mv, 
