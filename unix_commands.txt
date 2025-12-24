@@ -1,3 +1,5 @@
+DAY3 24-12-2025 WEDNESDAY
+
 Unix Commands:
 ls
 list. It is similar to dir of windows
@@ -40,3 +42,126 @@ Lists the files and folders along with the timestamp
 ls -ltr
 
 ls, rm, mkdir, rmdir, head, tail, cat, man, who, grep, awk, cp, mv, 
+-----------------------------------------------------
+class B
+class D
+
+R ref = new D(); // Fine
+D ref = new B(); // Error
+
+Agile and Scrum
+Unix Commands
+Shell Scripting (programming & problem Solving)
+Git commands, Rebasing
+Branching & Conflict management
+
+Networking
+Types
+Topologies
+Protocols
+--------------------------------------------------------------
+Shell Scripts:
+1. To print "hello programming"
+
+Filename: p1.sh
+#!/bin/bash
+echo hello programming
+
+To run the script:
+sh p1.sh
+
+2. Script to print the current user name, logged in time and date
+
+#!/bin/bash
+echo "Username is $USER"
+echo "Today date is "; date
+echo "Number of Users logged in: "; who | wc -l
+echo "Calender: "; cal
+----------------------------------
+Program to check if user given number is Even.
+
+#!/bin/bash
+echo "Enter a number to check if it is Even: "
+read inputNumber
+result = 'expr $inputNumber % 2'
+if $result = 0
+then
+	echo "$inputNumber is Even"
+----------------------------------
+#!/bin/bash
+echo Entera number:
+read num1
+result = 'expr $num % 2'
+if test $result = 0
+then
+	echo "Number is Even"
+else
+	echo "Number is Odd"
+fi
+--------------------------------------------------------------------
+poornima.s@revature.com & ragul.varadharajan.c@revature.com
+
+---------------------------------------------------------------------
+#!/bin/sh
+msg1 = "one"
+msg2 = "$msg1 two"
+msg2 = "$msg2 three"
+echo msg3
+-----------------------------------------
+#!/bin/bash
+#
+echo "Enter the year to check if it is Leap year:"
+read inputYear
+if [ $((inputYear % 4)) -eq 0 ] && [ $((inputYear % 100)) -ne 0 ] || [ $((inputYear % 400)) -eq 0 ]
+then
+echo "$inputYear is Leap Year"
+else
+echo "$inputYear is not a Leap Year"
+fi
+--------------------------------------------
+#!/bin/bash
+
+year=$1
+
+if [ -z "$year" ]; then
+    echo "Usage: $0 <year>"
+    exit 1
+fi
+
+if (( (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0) )); then
+    echo "$year is a leap year"
+else
+    echo "$year is not a leap year"
+fi
+-----------------------------------------------------
+Assignments:
+1. Write a script to open file1 and copy its contents to file2
+2. Write a script to open file1 and append its contents to file2
+3. Write a script to open file1 copy contents to file2 to file1 and append content of CLA.
+4. Write a script to Run p1.c and pass the o/p of p1.c as i/p to p2.c and p2.c
+5. Find and replace all occurances of the word "auto" with "automatic" in the user given file (CLA) case in-sensitive search using a shell script and grep command.
+
+6. Write a Script to find Factorial of a number
+7. Write a Script to print all the Prime numbers between $1 and $2
+8. Print the Nth Prime number
+9. Find the 2nd smallest digit of a number
+10.Find lucky digit of the user where the lucky digit is found by finding sum of the digits of the user given number repeatedly until single digit number is found.
+11. Find sum of Odd placed Even digits of the given number.
+i/p = 5376524  o/p = 4
+12. Given a number, print the number which is the very next possible number having all the digits with same frequency as that of the i/p number.
+13. 
+
+---------------------------------------------------
+
+main(int argc, char** args) {
+	// args[0] will be the command itself
+	int num1 = atoi(args[1]);
+	int num2 = atoi(args[2]);
+}
+
+main(String[] args) { // String... args
+	int num1 = Integer.parseInt(args[0]);
+	int num1 = Integer.parseInt(args[2]);
+}
+
+
