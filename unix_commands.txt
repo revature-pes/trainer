@@ -163,5 +163,45 @@ main(String[] args) { // String... args
 	int num1 = Integer.parseInt(args[0]);
 	int num1 = Integer.parseInt(args[2]);
 }
+---------------------------------------------------
+#!/bin/bash
 
+inputNumber=$1
+factorialNumber=1
+tempNumber=$inputNumber
+while [ $tempNumber -ge 1 ]
+do
+  echo $tempNumber
+  #echo $factorialNumber
+  factorialNumber=$((factorialNumber * tempNumber))
+  tempNumber=$((tempNumber - 1))
+done
+echo "Factorial of $inputNumber is $factorialNumber"
+exit 0
+-----------------------------------------------------
+#!/bin/bash
 
+fromNumber=$1
+toNumber=$2
+tempNumber=$fromNumber
+#prime=1
+while [ $tempNumber -le $((toNumber)) ]
+do
+  prime=1 # Assume the number in temp is Prime
+  i=2
+  while [ $i -lt $((tempNumber)) ]
+  do
+    if [ $((tempNumber % i)) -eq 0 ];
+    then
+      prime=0
+      break
+    fi
+    i=$((i + 1))
+  done
+  if [ $((prime)) -eq 1];
+  then
+    echo $tempNumber
+  fi
+  tempNumber=$((tempNumber - 1))
+done
+exit 0
