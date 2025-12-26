@@ -1,0 +1,47 @@
+<!Doctype HTML>
+<html lang="en-US">
+
+<head>
+    <title> Product of Two numbers </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function findProduct() { // $ and jQuery are synonymous
+            number1 = document.getElementById("firstNum").value
+            number2 = document.getElementById("secondNum").value
+            if (number1 == "" || number2 == "")
+                alert("Number cannot be empty")
+            let productNumber = parseFloat(number1) * parseFloat(number2);
+            document.getElementById("productNumber").innerHTML = productNumber;
+        }
+        function f1() {
+            //productAction.click(findProduct());
+            document.getElementById("firstNum").value = "10"
+            document.getElementById("secondNum").value = "20k"
+            productNumber.innerHTML("Product is");
+        }
+        //document.readyState(f1());
+    </script>
+</head>
+
+<body onload="f1()">
+    <h2> Product of Two numbers </h2>
+    <div>
+        <label for="firstNum"> First Number: </label>
+        <input type="text" id="firstNum">
+    </div>
+    <div>
+        <label for="secondNum"> Second Number: </label>
+        <input type="text" id="secondNum">
+    </div>
+    <div>
+        Product is: <span id="productNumber"></span>
+    </div>
+    <div>
+        <input type="button" value="Add" id="productAction" onclick="findProduct()">
+    </div>
+</body>
+
+</html>

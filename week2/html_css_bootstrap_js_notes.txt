@@ -27,3 +27,18 @@ Start with JS:
 Mention all (as many) properties of a text box.
 Mention all (as many) properties of a button.
 Types of button (button, reset, submit)
+9. Mention as many properties of Meta tag
+--------------------------------------------------------------
+1. Add a header and paragraph. The header is the title of the topic and paragraph is the description.
+The header must be center aligned and underlined and Blue in color. The paragraph must be in black.
+2. Use Anchor tag and add your Fav domain name and check if on click of the href, the website is opening or not.
+3. For the 1st program, put each of the 2 elements in div tag. And give different margins for each of them.
+4. Create a simple page with Index and on click of the titles, the cursor should reach the specific content in the webpage.
+5. Create 2 webpages with names bengaluru.html and kolkata.html
+In the bengaluru.html Add bengaluru image and also a href (anchor) with text "GO TO KOLKATA" and similar thing in the other file. On click of the image or the href, we should be able to move to the other file.
+6. Create an unordered list of 7 sister states.
+7. Create an ordered list of pet animals in order of their weights.
+8. Create a table of dairy items and their prices.
+9. Create a table of dairy items and their prices. with borders (at least 3 different ways)
+10. Create a simple feedaback form and allow user to give eloborated text (text area) of minimum 50 and maximum 1000 characters. If the conditions are met, then give a alert message Feddback submitted.
+
