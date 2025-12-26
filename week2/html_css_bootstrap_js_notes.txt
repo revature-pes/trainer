@@ -1,0 +1,29 @@
+DAY4 FRIDAY 26-12-2025
+
+HTML:
+Origin of HTML
+How HTML works with in the browser (compiler, execution machine and encription-decription)
+HTML5 tags
+Meta tags
+SEO
+What is doctype, head and body section
+Important HTML tags
+Types of tags
+
+HTML Tags:
+p, h, img, a, text (input, button, ....), label, div, html, head, body, table, title, meta, style, link, tr, th, td, ul, ol, li, 
+
+Programs:
+1. Create HTML (No CSS) for given design.
+2. Create the HTML for the given design using draw.io
+3. Create the HTML for the given design using AI tool
+4. Change CSS properties (Border color, border type, border radius, padding, margin, glow the border on mouse-hover-in)
+5. Set default content of the text box, set maximum characters for the text box.
+
+Start with JS:
+6. Change the Password as Phone number. Set the text box content to be only numeric, exactly 10 digits, no negative number, do this using RE
+7. Check if PersonName text box is empty, is having only alphabets, maximum 16 characters/letters, onBlur glow the border, onFocus glow the border
+8.ACTIVITY:
+Mention all (as many) properties of a text box.
+Mention all (as many) properties of a button.
+Types of button (button, reset, submit)
