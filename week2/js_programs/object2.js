@@ -14,7 +14,7 @@ function func(param1, param2, param3) {
 	console.log(trainer.name);
 	trainer[param2.value] = param3; // Doesn't change/modify trainer.name
 	console.log(trainer.name);
-	trainer[param2] = param3; // 
+	trainer[param2] = param3; // Here the name is modified
 	console.log(trainer.name); // 'Nithin Neelakanta Rao'
 	console.log(param2.value); // undefined
 	console.log(param2); // Prints 'name' which is the value of the variable 'param2'
