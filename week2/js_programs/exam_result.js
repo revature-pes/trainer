@@ -9,11 +9,11 @@ averageScore = 78
 
 if(averageScore >= 0 && averageScore <= 50)
     console.log(`Result is Fail`)
-if(averageScore >= 0 && averageScore <= 50)
+if(averageScore <= 70)
     console.log(`Result is Second Class`)
-if(averageScore >= 0 && averageScore <= 50)
+if(averageScore <= 90)
     console.log(`Result is First class`)
-if(averageScore >= 0 && averageScore <= 50)
+if(averageScore <= 100)
     console.log(`Result is Outstanding`)
 else
     console.log(`Invalid Average Score`)
