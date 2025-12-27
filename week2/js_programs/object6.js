@@ -18,5 +18,5 @@ walk1();
 const walk2 = trainer.techTrainer;
 walk2();
 
-const walk3 = trainer.techTrai.bind(trainer);
+const walk3 = trainer.techTrainer.bind(trainer);
 walk3();
