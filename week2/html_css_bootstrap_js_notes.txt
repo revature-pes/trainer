@@ -41,4 +41,43 @@ In the bengaluru.html Add bengaluru image and also a href (anchor) with text "GO
 8. Create a table of dairy items and their prices.
 9. Create a table of dairy items and their prices. with borders (at least 3 different ways)
 10. Create a simple feedaback form and allow user to give eloborated text (text area) of minimum 50 and maximum 1000 characters. If the conditions are met, then give a alert message Feddback submitted.
+--------------------------------------------------------------
+DAY5 SATURDAY 27-12-2025
+
+JAVA SCRIPT NOTES AND PROGRAMS
+
+JS is a Scripting language similar to Python or Shell scripting or Pearl.
+
+In Scripting languages, there is no compile time/phase.
+The code directly goes to execution phase where each of the instruction from the script is taken and 
+Compiled -> Intepreted -> Run
+
+The JS as we can guess, borrows the syntax from Java.
+Thus the Java naming stacndards must be followed.
+Every Browser has built in JS compiler, interpretor, execution machine and libraries built in it.
+
+The standardisation for JS is brought by ECMA (European Computer Manufacturers Association)
+Thus we have ES6 ES7 etc versions of JS.
+
+JS is not strongly type checked language like Java.
+The Microsoft has built a wrapper (upper layer) to JS and has come with its own flavour named Type Script. And Type Script code are/is type checked. And the TS scripts have .ts extension. AngularJS uses TS.
+
+JS is mainly used for client Side validations. However, it also gives functionality to the front end code/programming and makes it very easy for the users to use the UI (client side).
+
+JS has evoolved into a big language. JS earlier had no OOP. But today it has all the features of OOP as well.
+
+The Front end frameworks like React, Angular and Vue uses JS as the core language. The most simplest way of representing an object is using JSON (JS object notation) or JS object literal, which uses the Key-Value pair (similar to Python dict)
+
+JS is very easy to learn (Learn on the Go). However, what is important will be the ES6 and above features.
+
+For more information on JS, refer dev.mozilla.org
+
+Even in the databases like MongoDb, the JSON noation or similar notation are used (key-value pairs).
+
+Not just the frontend frameworks, but also the backend frameworks like ExpressJs, and the backend-database bridge like Sequelize or even the mongoose follow much of the JS syntax.
+
+Thus for the MERN Stack and MEAN Stack kind of Web App Development technologies, JS remains the major language, the syntax and many a libraries as well (promise, mustache etc.)
+
+Thus learning JS is very important for any software professional!
+
 
