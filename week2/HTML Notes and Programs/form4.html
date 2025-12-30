@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title> Form3 Program </title>
+		
+		<style type="text/css">
+			@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css");
+			
+			input[type=text] {
+				margin-bottom : 10px;
+				align : left;
+			}
+			label {
+				width : 50px;
+				display : block;
+			}
+			
+		</style> 
+		<link rel="stylesheet" type="text/css" href="css1.css">
+		
+	</head>
+	
+	<body style = "padding : 20px">
+		<form>
+			<div>
+				<label for="username_id"> Name: </label>
+				<input  type="text" name="username" id="username_id" size="40px" maxlength="10" value="Type Your UserName Here" />
+				<br>
+				<label for="password_id"> password: </label>
+				<input  type="password" name="password1" id="password_id" size="40px" maxlength="12"  />
+				<br>
+				<label  for="cpassword_id"> Confirm password: </label>
+				<input type="password" name="password2" id="password_id1" size="40px" maxlength="12"  />
+			</div>
+			<br>
+			<div>
+				Male: <input type="radio" name="gender1" value="male" />
+				FeMale: <input type="radio" name="gender2" value="female" />
+			</div>
+			<br>
+			<div>
+				<h2> Select the places you wish to visit: </h2>
+				<input type="checkbox" name="Heaven_like_places1"> Anini
+				<input type="checkbox" name="Heaven_like_places2"> ManiMahesh Lake
+				<input type="checkbox" name="Heaven_like_places3"> Shrikhand Mahadev
+				<input type="checkbox" name="Heaven_like_places4"> Amarnath
+			</div>
+		</form>
+	</body>
+</html>
+
+<!-- 
+CREATE A SIGN-UP PAGE USING HTML FORM:
+	1. Take a label and a text box for username
+	2. Take a label and a text box for password
+	3. Take a label and a text box for confirm password
+	4. Take a label and a text box to read date in dd-mm-yyyy format
+	5. Take a label and a radio buttons for gender
+	6. Print a header for hobbies (Add upto 10 hobbies as Check boxes)
+	7. Add a submit button.
+-->

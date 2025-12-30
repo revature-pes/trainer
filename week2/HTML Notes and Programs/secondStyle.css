@@ -1,0 +1,19 @@
+h1{
+	background-color: orange;
+	color:white;
+}
+
+p{
+	color: green;
+}
+
+div > h1{background-color: yellow; color: navy;}
+
+div > p { color:brown; }
+
+.myclass {
+	color:red;
+	border:2px solid red;
+	border-radius: 10px;
+}
+

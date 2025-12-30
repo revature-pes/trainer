@@ -1,0 +1,59 @@
+1. Create a folder with name newgen training
+	1. create sub folder html
+	2. css
+	3. js, Ajax and json, (HTML5)
+	4. java
+		* OOP, Arrays and String
+		* Exception handling and collections
+		* jdbc
+	5. DataBase
+		1. Basics (RDBMS, ACID, select Sub-languages, various clauses)
+		2. Stored Procedures, Functons, Triggers and cursor
+	6. Jsp, Servelets, json
+	7. Project
+
+HTML
+* It is a language used to create web pages.
+* It is case insensitive.
+* The compiler and runtime machine of HTML is embedded inside the BROWSER
+* HTML uses various Tags whih are also called as Elements. And these tags will have atrributes which alter or over-ride the default/implicit behaviour.
+* Languages similar to HTML are XML, CSS
+
+TEMPLATE OF A HTML CODE/PROGRAM
+
+<doctype html!> <! It defines the document type. This is optional in most of the cases -->
+<! THIS IS A HTML COMMENT. Comments do not get compiled nor run -->
+<HTML type = "text/html">
+<! type is an attribute of many a tags -->
+	<HEAD>
+		<! All info and data (meta data) and the source files or scripts can be added here -->
+	</HEAD>
+	<BODY> <!
+		<! All the elements/tags of the web page are added in to the body tag -->
+	</BODY>
+</HTML>
+
+TAGS:
+<a> Anchor Tag: To specify a hyperlink (internal or external files)
+
+<abbr> Abbreviation tag: It defines a Acronym
+
+<audio> It is used to add an audio file with basic/default audio controls.
+
+<b> It is used to bold a piece of text in the webpage
+<strong> It is similar to <b> wu
+<i> It is used to Italisize a piece of text in the webpage
+<u> It is used to underline a piece of text in the webpage
+<br> To add a line break (To go to the new line (ext line))
+<hr> To add a Thin Horizontal line in the webpage
+<p> To add a paragraph in the webpage
+<pre> To add a paragraph and also keep the content as given insie the <pre> tag
+<left> To align the text to left
+<right> To align the text to right
+<center> To align the text to center
+<del> To specify the text in the webpage to be deleted
+<div> To create a independent division in the webpage
+<footer> To add a footer to the webpage
+<title> To add title to a webpage (which will be displayed in title bar with left alignment
+<H1> To display text as a header (Other headers are h2, h3, h4, h5 and h6)
+

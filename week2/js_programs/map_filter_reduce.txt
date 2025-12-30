@@ -31,3 +31,60 @@ let totalSal = employees.reduce((sum, emp) => {
     return sum + emp.sal
 }, 0)
 console.log("Total salary = ",totalSal)
+----------------------------------------------------
+if( var == 15) // Good
+if( 15 == var) // Bad
+
+if(age < 18) // Bad
+	do this 
+
+if(studentAge < 18) { // Good
+	do this
+} // Good
+
+for(i = 1; i < 11; i++) // Bad
+	do this;
+
+for(let i = 1; i <= 10; i++) { // Good
+	Do this;
+	and This;
+}
+--------------------------------------------------
+Relational Operators:
+> < >= <= == !=
+
+[10, 20]  closed interval
+(30, 60) open interval
+--------------------------------------------
+JAVA	MYSQL
+byte	tinyint
+short	smallint
+int		int
+long	bigint
+
+
+int num1, num2;
+
+new Student();
+(Node*) malloc(sizeof(Node) * size);
+
+read size;
+new float[size]
+----------------------------------------------
+OOP (AIEP)
+Funtion Call Mechanism (Call Stack)
+Special purpose Registers (FP, SP, IR, PC, Accumulator)
+Memory management of a program (code area, GDS, Stack area, Heap)
+Difference between static and dynamic memory allocation
+Few examples of GCP (good coding practices)
+CRUD operations
+Compilatuion (syatax checking, translation and interpretation)
+Difference between (C++ Java and Python)
+Object code vs Bytecode
+
+Assignments:
+css CHEAT sheet
+HTML tags, html5 tags
+Regular expression basics
+
+
