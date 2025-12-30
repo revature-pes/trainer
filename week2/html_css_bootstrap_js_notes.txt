@@ -80,4 +80,49 @@ Thus for the MERN Stack and MEAN Stack kind of Web App Development technologies,
 
 Thus learning JS is very important for any software professional!
 
+If n = null
+Here null is the value to mention that the reference variable 'n' is not pointing to any object. Thus 'n' here is of object type.
+typeof() gives the data type of the variable/value.
 
+n = {id : 1244, name : 'nithin', salary : 55999}
+
+Here n is the reference which points to the employee object.
+Now if we make n = null, it means n is now not pointing to any object. And the object that was earlier pointed by 'n' will be garbage collected.  (memory deallocation)
+
+DATA TYPES IN JS:
+1. number (both integer and float)
+2. object (A variable/reference whose value is null doesn't refer/point to any object)
+3. boolean (true or false)
+4.
+
+Say suppose,
+n = 15		n is number
+m = '15'	m is string
+
+When we check n == m
+Here, only the values are checked, ignoring their data types.
+Hence n == m return true.
+
+However, if want JS to check not just the values but also their data types, then we must use ===
+
+n === m now returns false
+
+Note: string is the DT in JS and String is the DT in Java
+We can use subscript in JS for string objects where as in Java, it is syntax Error.
+
+m = 'mandya'
+m[0] returns 'm' (which is also considered to be string)
+m[1] returns 'a'
+m[6] returns undefined in JS
+Where as m.charAt(6) in Java returns StringIndexOutOfBoundsException
+
+In java, m.charAt(3) returns 'd' which is of type char and not String.
+
+In the exam_results program we understood that, it is not just important to solve a problem (find a solution), but to find the best solution (optimised solution). It is important to think about the solution behaving (efficiency) on different type of i/p.
+
+For example, say if the number of students in the college are 5000 and the college ranks on top list of the country, and if we apply the solution as it is, then we end up checking 5000 * 4 = 20000 conditions.
+However if we take the previous years results of the college (data analytics) and then change the logic accordingly (check if outstanding and the first class and then 2nd class and so on..), then the number of conditions checked will be only 5000 * 1 = 5000. Thus we decreased the time taken by 75%.
+--------------------------------------------------
+DAY7 TUESDAY 30-12-2025
+
+Student student = new Student();
