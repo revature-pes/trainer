@@ -1,9 +1,9 @@
-var number_list = [];
+var numberList = [];
 function doAdd(){
     let number = parseInt(document.getElementById('number').value);
-    number_list.push(number);
+    numberList.push(number);
     let items = '';
-    for(let n of number_list) {
+    for(let n of numberList) {
         items = items + `<LI class="p-2 btn btn-primary m-2" 
                 style="list-style-type:none;">${n}</LI>`
     }

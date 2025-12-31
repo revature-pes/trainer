@@ -41,7 +41,7 @@ Lists the files and folders along with the timestamp
 
 ls -ltr
 
-ls, rm, mkdir, rmdir, head, tail, cat, man, who, grep, awk, cp, mv, 
+ls, rm, mkdir, rmdir, head, tail, cat, man, who, grep, awk, cp, mv, cut, tr, sed
 -----------------------------------------------------
 class B
 class D
@@ -205,3 +205,78 @@ do
   tempNumber=$((tempNumber - 1))
 done
 exit 0
+--------------------
+wc command
+
+$ wc filename.txt
+ 10  45 256 filename.txt
+# Output indicates 10 lines, 45 words, and 256 bytes.
+
+If no file is specified, wc reads from the standard input (stdin), allowing it to be used with pipes (|) from other commands. 
+Common Options
+You can use options to specify which counts you want to display: 
+-l, --lines: Print the newline (line) count.
+-w, --words: Print the word count.
+-c, --bytes: Print the byte count.
+-m, --chars: Print the character count (which may differ from byte count in multi-byte encodings like Unicode).
+-L, --max-line-length: Print the length of the longest line (a GNU extension)
+
+To count only the number of words in a file:
+bash
+$ wc -w filename.txt
+To count the number of files and directories in the current directory by piping the output of ls:
+bash
+$ ls | wc -l
+To count the number of lines in the output of another command (e.g., grep):
+bash
+$ grep "error" logfile.txt | wc -l
+----------------------
+The grep command in Unix/Linux is a powerful command-line utility used for searching plain-text data files for lines that match a specified pattern. The name "grep" stands for "globally search for a regular expression and print matching lines".
+
+grep [options] pattern [file(s)]
+
+
+[options]: Modifies the search behavior (e.g., case-insensitive, recursive, line numbers).
+pattern: The text or regular expression you are searching for. It's a good practice to enclose the pattern in single quotes (' ') to protect it from interpretation by the shell.
+[file(s)]: The file or files to search within. If no file is specified, grep reads from standard input (e.g., the output of another command via a pipe |). 
+Common Examples and Options
+Option 	Description	Example Command
+-i	Ignore case distinctions in the pattern.	grep -i "error" syslog.log
+-n	Display the matching lines along with their line numbers.	grep -n "Port" config.txt
+-v	Invert the match, selecting lines that do not match the pattern.	grep -v "INFO" app.log
+-c	Print only a count of the matching lines.	grep -c "failed" auth.log
+-w	Match only whole words (e.g., searches for "hope", not "hopes" or "hopeful").	grep -w "user" file.txt
+-r	Recursively search through all files in directories and subdirectories.	grep -r "TODO" .
+-l	Print only the names of files that contain a match, not the lines themselves.	grep -l "function" *.py
+-A N	Print N lines of trailing context after the match.	grep -A 3 "error" logfile
+-B N	Print N lines of leading context before the match.	grep -B 2 "failed" logfile
+-C N	Print N lines of context around the match (-A N and -B N).	grep -C 2 "warning" logfile
+
+
+Using grep with Pipes 
+grep is frequently used with the pipe (|) operator to filter the output of other commands. 
+Example: To find if the nginx process is running:
+bash
+ps aux | grep nginx
+This command takes the output of ps aux (a list of all running processes) and pipes it as input to grep, which then filters for lines containing "nginx". 
+
+Regular Expressions
+The true power of grep comes from its support for regular expressions (regex), which are patterns used to match character combinations. 
+Symbol 	Description	Example
+^	Matches the beginning of a line.	grep "^Start" file.txt (Lines starting with "Start")
+$	Matches the end of a line.	grep "End$" file.txt (Lines ending with "End")
+.	Matches any single character.	grep "f.o" file.txt (matches "foo", "fao", etc.)
+*	Matches zero or more occurrences of the preceding character or expression.	grep "a*b" file.txt (matches "b", "ab", "aab", etc.)
+[ ]	Matches any one character within the brackets.	grep "file[12].txt" (matches "file1.txt" or "file2.txt")
+**`	`**	Logical OR operator (use with -E option).
+grep Command in Linux/Unix Tutorial With Examples - Built In
+7 Aug 2024 — grep Command in Linux and Unix: A Tutorial. The grep command is a tool in Linux and Unix that's used to search for speci...
+
+Built In
+
+unix command to grep for a particular word in a file - Stack Overflow
+7 Mar 2017 — unix command to grep for a particular word in a file * String(`TYPE',`ABC')dnl String('TYPE',`BCD')dnl. and some other s...
+
+Stack Overflow
+Use the Linux grep Command - Rackspace
+What is grep ? You use the grep command within a Linux or Unix-based system to perform text searches for a defined criteria of wor...

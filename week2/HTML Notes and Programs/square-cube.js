@@ -1,5 +1,9 @@
 function doSquare() {
-    let num = parseInt(document.getElementById("number").value);
+    if(document.getElementById("number").value.length == 0)
+        alert("Enter the input number")
+    else if(document.getElementById("number").value)
+        ;
+    let num = parseFloat(document.getElementById("number").value);
     let square = num * num;
     document.getElementById("output").value = square;
     document.getElementById("output_caption").innerHTML = "square";

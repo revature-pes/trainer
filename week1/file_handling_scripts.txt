@@ -1,0 +1,234 @@
+1. Check if the file Exists:
+
+#!/bin/bash
+file="test.txt" // Read filename via command line Arg.
+
+if [ -f "$file" ]; then
+    echo "File exists"
+else
+    echo "File does not exist"
+fi
+--------------------------------------------------
+2. Check the permissions available/applicable on a file
+
+#!/bin/bash
+file="test.sh"
+
+[ -r "$file" ] && echo "Readable"
+[ -w "$file" ] && echo "Writable"
+[ -x "$file" ] && echo "Executable"
+------------------------------------------------
+3. Count number of lines, words, and characters in a file
+
+#!/bin/bash
+file="test.txt"
+wc "$file"
+--------------------------------------------------
+4. 
+Display file contents line by line
+
+#!/bin/bash
+file="test.txt"
+
+while read line
+do
+    echo "$line"
+done < "$file"
+-----------------------------
+5. Copy a file to another location
+
+#!/bin/bash
+cp source.txt /tmp/destination.txt
+echo "File copied successfully"
+------------------------------------
+6. Rename a file
+
+#!/bin/bash
+mv oldname.txt newname.txt
+echo "File renamed"
+-------------------------
+7. Delete files older than 7 days
+
+#!/bin/bash
+find /path/to/dir -type f -mtime +7 -exec rm {} \;
+----------------------
+8. Search for a word in a file
+
+#!/bin/bash
+file="test.txt"
+word="error"
+
+grep -i "$word" "$file"
+---------------------------------
+9. Append text to a file
+
+#!/bin/bash
+echo "New log entry" >> log.txt
+-----------------------------
+10. Read a file and print only even-numbered lines
+
+#!/bin/bash
+file="test.txt"
+sed -n '2~2p' "$file"
+---------------------------------------
+11. Create a backup file
+
+#!/bin/bash
+file="test.txt"
+cp "$file" "$file.bak"
+echo "Backup created"
+----------------------------------------------
+'245'
+
+
+'2' - '0'
+50 - 48 = 245
+
+scanf("%d", &num);
+
+receive the string
+convert the string into a value of specified format
+now store this data in the specified address
+return the number of values stored.
+----------------------------------------
+
+
+#!/bin/bash
+
+# Array to store flights
+declare -a flights
+
+# Function to display menu
+show_menu() {
+    echo "--------------------------------------"
+    echo "        Flight Management System      "
+    echo "--------------------------------------"
+    echo "1. Create Flight"
+    echo "2. Read All Flights"
+    echo "3. Update Flight"
+    echo "4. Delete Flight"
+    echo "5. Exit"
+    echo "--------------------------------------"
+    echo -n "Enter your choice: "
+}
+
+# Function to create a flight
+create_flight() {
+    echo "Enter Flight ID:"
+    read id
+
+    # Check for duplicate ID
+    for flight in "${flights[@]}"; do
+        existing_id=$(echo "$flight" | cut -d'|' -f1)
+        if [ "$existing_id" == "$id" ]; then
+            echo "Flight with ID $id already exists!"
+            return
+        fi
+    done
+
+    echo "Enter Airline:"
+    read airline
+    echo "Enter Flight Code:"
+    read flight_code
+    echo "Enter Source:"
+    read source
+    echo "Enter Destination:"
+    read destination
+    echo "Enter Duration (in hours):"
+    read duration
+    echo "Enter Fare:"
+    read fare
+
+    # Store as a single string
+    flight_record="$id|$airline|$flight_code|$source|$destination|$duration|$fare"
+    flights+=("$flight_record")
+
+    echo "Flight added successfully!"
+}
+
+# Function to read/display all flights
+read_flights() {
+    if [ ${#flights[@]} -eq 0 ]; then
+        echo "No flight records found."
+        return
+    fi
+
+    echo "--------------------------------------------------------------------------------"
+    printf "%-5s %-15s %-12s %-12s %-15s %-10s %-8s\n" \
+           "ID" "Airline" "Code" "Source" "Destination" "Duration" "Fare"
+    echo "--------------------------------------------------------------------------------"
+
+    for flight in "${flights[@]}"; do
+        IFS='|' read id airline code source dest duration fare <<< "$flight"
+        printf "%-5s %-15s %-12s %-12s %-15s %-10s %-8s\n" \
+               "$id" "$airline" "$code" "$source" "$dest" "$duration" "$fare"
+    done
+}
+
+# Function to update a flight
+update_flight() {
+    echo "Enter Flight ID to update:"
+    read uid
+
+    for i in "${!flights[@]}"; do
+        fid=$(echo "${flights[$i]}" | cut -d'|' -f1)
+
+        if [ "$fid" == "$uid" ]; then
+            echo "Enter new Airline:"
+            read airline
+            echo "Enter new Flight Code:"
+            read flight_code
+            echo "Enter new Source:"
+            read source
+            echo "Enter new Destination:"
+            read destination
+            echo "Enter new Duration:"
+            read duration
+            echo "Enter new Fare:"
+            read fare
+
+            flights[$i]="$uid|$airline|$flight_code|$source|$destination|$duration|$fare"
+            echo "Flight updated successfully!"
+            return
+        fi
+    done
+
+    echo "Flight ID not found."
+}
+
+# Function to delete a flight
+delete_flight() {
+    echo "Enter Flight ID to delete:"
+    read did
+
+    for i in "${!flights[@]}"; do
+        fid=$(echo "${flights[$i]}" | cut -d'|' -f1)
+
+        if [ "$fid" == "$did" ]; then
+            unset flights[$i]
+            flights=("${flights[@]}")  # Re-index array
+            echo "Flight deleted successfully!"
+            return
+        fi
+    done
+
+    echo "Flight ID not found."
+}
+
+# Main loop
+while true; do
+    show_menu
+    read choice
+
+    case $choice in
+        1) create_flight ;;
+        2) read_flights ;;
+        3) update_flight ;;
+        4) delete_flight ;;
+        5) echo "Exiting program."; exit 0 ;;
+        *) echo "Invalid choice! Try again." ;;
+    esac
+
+    echo
+done
+------------------------------------------
