@@ -1,6 +1,7 @@
 const student = {
 	name : 'mani',
 	techStudent() {
+		console.log("I am a good student");
 		console.log(this);
 	}
 };
@@ -18,5 +19,5 @@ walk1();
 const walk2 = trainer.techTrainer;
 walk2();
 
-const walk3 = trainer.techTrainer.bind(trainer);
+const walk3 = student.techStudent.bind(trainer);
 walk3();
