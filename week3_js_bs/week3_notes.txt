@@ -1,0 +1,125 @@
+1. What is the difference between px and pt and what are the other units in CSS ?
+2. Implement Aggregate operations (min, max, count, avg, sum) on a list of objects.
+3. How to delete key-value pair(s) from a JSON
+4. What are essential things to learn in UI UX?
+5. UML diagrams
+6. OOAD, SOLID Principles and Design Patterns
+7. DSA
+8. Functional programming. How to implement it in Java?
+9. Figma
+10. 
+
+-----------------------------------------
+result = num * num
+print(f'Result is {result}')
+
+console.log(`Result is ${result}`)
+
+i++
+j--
+a[i] = b[j]
+b[j]--
+
+a[++i] = b[--j]--
+---------------------------------------------
+INSERTION SORT:
+
+
+BUBBLE SORT:
+13   25   10   99   78   45   25   15
+13   10   25   78   45   25   15   99 
+
+10   13   15   25   25   45   78   99
+
+
+for i from 0 to n-2 do:   // n times
+	sorted = true // assume the list is sorted
+	for j from 0 to n-i-2; do:  // n times
+		if array[j] > array[j+1]
+			swap array[j] with array[j+1]
+			sorted = false
+	if sorted
+		return
+
+BCE O(n2)
+WCE O(n2)
+
+
+SLL / DLL
+CSLL / CDLL
+
+1. Implement following operations:
+	1. Insert at front
+	2. Insert at rear
+	3. Insert at position
+	4. Delete from rear
+	5. Delete from front
+	6. Delete from position
+	7. List all
+		1. Front to rear
+		2. Rear to front
+	8. search node
+2. Reverse a SLL
+	1. iterative
+	2. recursive
+3. Check if 2 SLL/DLL converges at some point
+4. Implement Stack using SLL
+5. Implement Queue using SLL/DLL
+6. Merge 2 sorted SLLs and the merged LL too must be sorted.
+7. Sort a SLL.
+
+
+void printFromRear(Node temp) {
+	if(temp == null) {
+		return;
+	printFromRear(temp.link)
+	print(temp.data)
+}
+
+
+BINARY SEARCH:
+
+23  34  45  50  65  77  80  80  88  99
+
+
+go to the mid element
+check if it is the search element
+if yes, return the mid index
+else
+	if search element is less than mid element:
+		make the 1st half of array as search array
+	else
+	make the 2nd.0 half of array as search array
+
+
+l = 0
+h = n-1
+do this:
+	mid = (l + h) / 2
+	if element == a[mid]
+		return mid
+	else if element < a[mid]
+		h = mid - 1
+	else
+		l = mid + 1
+	until l <= h
+23  34  45  50  65  77  80  80  88  99
+
+Let Number of iterations be X
+
+n     n/2      n/4    .......   8    4    2    1
+2(X-1)                                   2(1)  2(0)
+
+n = 2(X-1)
+n = 2 power X
+X = O(LogN)
+
+
+100     8
+1000    12
+10000   15
+100000  19
+--------------------------------------------------
+https://forms.gle/csPvmR2Y6KcyPumt8
+
+		
