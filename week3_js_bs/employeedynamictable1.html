@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<style type= "text/css">  @import url("d5p3-studentdata.css");</style>
+		<script type= "text/javascript" src="employeedynamictable1.js"></script> 
+	</head>
+	
+	<body>
+		<h1 align = center> Employee Details Form </h1>
+	 <div class = "div1">
+		<form>
+			<div align = center>
+				<label for= "inputText"><h4>Enter Employee Details:</h4></label>
+				<input type="text" name="employeeDetails" id="idemployeeDetails">
+				<br>
+				<input style = "margin-top: 10px" type="button" value="Add Employee Data" onclick="addEmployeeData();">
+			</div>
+			<br>
+		</form>
+		</div>
+		<br>
+			<div align = center>
+				<table align = center cellspacing="15" BGCOLOR = #FFFDD0 cellpadding="10">
+					<thead>
+					<tr bgcolor="red";>
+						<th> USERNAME </th>
+						<th> DESIGNATION </th>
+						
+						<th>  </th>
+					</tr>
+					</thead>
+					<tbody  id = "idEmployeeTable">	
+					</tbody>
+				</table>
+			</div>	
+	</body>
+</html>
