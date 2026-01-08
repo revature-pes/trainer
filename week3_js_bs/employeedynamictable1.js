@@ -1,14 +1,14 @@
 
-var arr = []
+var employees = []
 
 function showTableData() {
 	var table = "";
 	var i = 0;
-	for(var jStud1 of arr) {
-		var eachRow = "<tr>"
+	for(let employee of employees) {
+		let eachRow = "<tr>"
 		
-		eachRow += "<td>" + jEmployee1.username + "</td>"
-		eachRow += "<td>" + jEmployee1.designation + "</td>"
+		eachRow += "<td>" + employee.username + "</td>"
+		eachRow += "<td>" + employee.designation + "</td>"
 		
 		eachRow += "<td>  <input type='button' value='delete' onclick = 'deleteRecord(" + i +")'>  </td>"
 		eachRow += "</tr>"
@@ -19,7 +19,7 @@ function showTableData() {
 }
 
 function deleteRecord(index) {
-	arr.splice(index, 1);
+	employees.splice(index, 1);
 	showTableData();
 }
 
@@ -28,15 +28,15 @@ function addEmployeeData() {
 		alert("Record Not Entered")
 		return false;
 	}
-	var studRecord = idemployeeDetails.value.split(' ');//Copy textbox data into the Array
-	if(studRecord.length != 2) {
+	var employeeRecord = idemployeeDetails.value.split(' ');
+	if(employeeRecord.length != 2) {
 		alert("Improper Data Entered")
 		idemployeeDetails.value = "";
 		idemployeeDetails.focus();
 		return false;
 	}
 	
-	var jStud = { "username":studRecord[0], "designation":studRecord[1]};
-	arr.push(jStud);
+	var employee = {"username":employeeRecord[0],  "designation":employeeRecord[1]};
+	employees.push(employee);
 	showTableData();
 }
