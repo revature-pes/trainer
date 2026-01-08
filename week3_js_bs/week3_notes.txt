@@ -120,7 +120,23 @@ X = O(LogN)
 10000   15
 100000  19
 --------------------------------------------------
+bootstrap.min.css 
+	Source code of bootstrap css only
 
+bootstrap.bundle.css
+	Source code of bootstrap css only
+	popper.js	
+	comments and description
 
-
+bootstrap.bundle.min.css
+	Source code of bootstrap css only
+	popper.js
 -------------------------------------------------
+bg-body-tertiary (navbar)
+navbar-expand-lg
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-md">
+    <a class="navbar-brand" href="#">Navbar</a>
+  </div>
+</nav>
