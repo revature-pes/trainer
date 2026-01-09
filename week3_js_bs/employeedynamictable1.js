@@ -23,6 +23,10 @@ function deleteRecord(index) {
 	showTableData();
 }
 
+function focusTextBox() {
+	idemployeeDetails.focus();
+}
+
 function addEmployeeData() {
 	if(idemployeeDetails.value.trim() == "") {
 		alert("Record Not Entered")
@@ -30,12 +34,11 @@ function addEmployeeData() {
 	}
 	var employeeRecord = idemployeeDetails.value.split(' ');
 	if(employeeRecord.length != 2) {
-		alert("Improper Data Entered")
-		idemployeeDetails.value = "";
-		idemployeeDetails.focus();
+		alert("Improper Data Entered")	
 		return false;
 	}
-	
+	idemployeeDetails.value = "";
+	idemployeeDetails.focus();
 	var employee = {"username":employeeRecord[0],  "designation":employeeRecord[1]};
 	employees.push(employee);
 	showTableData();
